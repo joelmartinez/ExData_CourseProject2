@@ -1,3 +1,7 @@
+# custom exclusions
+*.zip
+*.rds
+
 # History files
 .Rhistory
 .Rapp.history
