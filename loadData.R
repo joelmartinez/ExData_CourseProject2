@@ -5,3 +5,7 @@ if (!exists("NEI")) {
 if (!exists("SCC")) {
 	SCC <- readRDS("Source_Classification_Code.rds")
 }
+if (!("ggplot2" %in% installed.packages())) {
+	install.packages("ggplot2")
+}
+library(ggplot2)

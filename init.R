@@ -9,3 +9,4 @@ if (!file.exists("data.zip")) {
 	download.file(data.url, "data.zip", "curl")
 	unzip("data.zip")
 }
+
