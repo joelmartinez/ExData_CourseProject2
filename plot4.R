@@ -1,7 +1,7 @@
 # 	4.	Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008? 
 source("loadData.R")
 
-# first get t
+# first get the codes for coal-related classifications
 fscc <- SCC[grepl("coal", as.character(SCC$SCC.Level.Three), ignore.case=T),]
 coal.sources <- as.character(fscc$SCC)
 coal.observations <- NEI[NEI$SCC %in% coal.sources,]
